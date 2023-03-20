@@ -1,0 +1,8 @@
+<div style="background-color: red; padding: 20px;">
+    <app-tirelire [number]="tirelires[0].number" [value]="tirelires[0].value" (spent)="onSpent(tirelires[0].number)"></app-tirelire>
+    <app-tirelire [number]="tirelires[1].number" [value]="tirelires[1].value" (spent)="onSpent(tirelires[1].number)"></app-tirelire>
+    <app-tirelire [number]="tirelires[2].number" [value]="tirelires[2].value" (spent)="onSpent(tirelires[2].number)"></app-tirelire>
+
+<button (click)="addMoney()">Ajouter 100 Fr</button>
+
+</div>
